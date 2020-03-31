@@ -1,0 +1,29 @@
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8888/eureka/
+
+server:
+  port: 1234
+
+spring:
+  application:
+    name: info-service
+
+
+
+#  cloud:
+#    config:
+#      uri: http://localhost:1234
+#      fail-fast: true
+#      retry:
+#        multiplier: 1.1
+#        maxInterval: 500000
+#        max-attempts: 20
+#    service-registry:
+#      auto-registration:
+#        fail-fast:
+
+#spring.application.name=student_info
+#eureka.client.service-url.defaultZone=http://localhost:8888/eureka/
+

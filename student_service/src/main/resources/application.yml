@@ -1,0 +1,18 @@
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8888/eureka/
+
+server:
+  port: 2234
+
+spring:
+  application:
+    name: student-service
+
+
+#spring.application.name=student_service
+#eureka.client.service-url.defaultZone=http://localhost:8888/eureka/
+#server.port=${PORT:0}
+#eureka.instance.instanceId=${spring.application.name}:${vcap.application.instance_id:${spring.application.instance_id:${random.value}}}
+#  ${spring.application.name}:${spring.application.instance-id}:${random.value}}

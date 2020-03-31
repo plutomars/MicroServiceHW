@@ -1,0 +1,26 @@
+#spring.application.name=DiscoveryService
+##spring.cloud.config.uri=http://localhost:8888
+#spring.cloud.config.fast-fail=true
+#server.port=8888
+#eureka.instance.hostname=localhost
+#spring.profiles.active=dev
+#eureka.instance.prefer-ip-address=true
+#eureka.client.register-with-eureka=false
+#eureka.client.fetch-registry=false
+#eureka.server.wait-time-in-ms-when-sync-empty=0
+#eureka.client.service-url.defaultZone=http://${eureka.instance.hostname}:${server.port}/eureka/
+spring:
+  application:
+    name: DiscoveryService
+server:
+  port: 8888
+
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    fetch-registry: false
+    register-with-eureka: false
+    service-url:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+
